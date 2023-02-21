@@ -73,13 +73,12 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-        enable-AzPSSession: true 
            
     # Deploy Azure WebApp using Bicep file
     - name: deploy
       uses: azure/arm-deploy@v1
       with:
-        subscriptionId: ${{ env.SUBSCRIPTION-ID }}
+        subscriptionId: "13bc7290-50b7-44ad-b948-0ed4daeb12ca"
         resourceGroupName: ${{ env.RESOURCE-GROUP }}
         template: bicep-template/webapp.bicep
         parameters: 'webAppName=${{ env.WEBAPP-NAME }} location=${{ env.LOCATION }}'
