@@ -7,8 +7,8 @@ resources:
 
 variables:
   azureServiceConnection: 'azure-connection'
-  subscriptionId: 'YOUR-SUBSCRIPTION-ID'
-  resourceGroup: 'rg-az400-container-NAME'
+  subscriptionId: '13bc7290-50b7-44ad-b948-0ed4daeb12ca'
+  resourceGroup: 'rg-az400-eshoponweb-RADU1'
   location: 'westeurope'
 
 stages:
